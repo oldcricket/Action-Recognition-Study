@@ -3,13 +3,25 @@
 This repository contains a general implementation of 6 representative 2D and 3D approaches for action recognition including I3D [1], ResNet3D [2], S3D [3], R(2+1)D [4], TSN [5] and TAM [6]. 
 
 ```
-@incollection{
-    fan2019blvnet,
-    title={{More Is Less: Learning Efficient Video Representations by Temporal Aggregation Modules}},
-    author={Quanfu Fan and Chun-Fu (Ricarhd) Chen and Hilde Kuehne and Marco Pistoia and David Cox},
-    booktitle={Advances in Neural Information Processing Systems 33},
-    year={2019}
-}
+1. Joao Carreira and Andrew Zisserman. Quo vadis, action recognition? a new model and the kinetics dataset. In proceedings
+of the IEEE Conference on Computer Vision and Pattern Recognition, pages 6299–6308, 2017
+
+2. Kensho Hara, Hirokatsu Kataoka, and Yutaka Satoh. Can Spatiotemporal 3D CNNs Retrace the History of 2D CNNs
+and ImageNet? In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2018.
+
+3. Saining Xie, Chen Sun, Jonathan Huang, Zhuowen Tu, and Kevin Murphy. Rethinking Spatiotemporal Feature Learning:
+Speed-Accuracy Trade-offs in Video Classification. In The European Conference on Computer Vision (ECCV),
+Sept. 2018
+
+4. Du Tran, Heng Wang, Lorenzo Torresani, Jamie Ray, Yann LeCun, and Manohar Paluri. A Closer Look at Spatiotemporal
+Convolutions for Action Recognition. In The IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2018
+
+5. Ji Lin, Chuang Gan, and Song Han. Temporal Shift Module for Efficient Video Understanding. In The IEEE International
+Conference on Computer Vision (ICCV), 2019
+
+6. Quanfu Fan, Chun-Fu (Ricarhd) Chen, Hilde Kuehne, Marco Pistoia, and David Cox. More Is Less: Learning Efficient
+Video Representations by Temporal Aggregation Modules. In Advances in Neural Information Processing Systems 33,
+2019.
 ```
 
 ## Requirements
