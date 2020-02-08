@@ -1,5 +1,17 @@
 # Action Recognition Study
 
+This repository contains a general implementation of 6 representative 2D and 3D approaches for action recognition including I3D [1], ResNet3D [2], S3D [3], R(2+1)D [4], TSN [5] and TAM [6]. 
+
+```
+@incollection{
+    fan2019blvnet,
+    title={{More Is Less: Learning Efficient Video Representations by Temporal Aggregation Modules}},
+    author={Quanfu Fan and Chun-Fu (Ricarhd) Chen and Hilde Kuehne and Marco Pistoia and David Cox},
+    booktitle={Advances in Neural Information Processing Systems 33},
+    year={2019}
+}
+```
+
 ## Requirements
 
 ```
@@ -9,6 +21,10 @@ pip3 install tqdm pyarrow lmdb tensorboard_logger
 pip3 install git+https://github.com/chunfuchen/pytorch-summary
 ```
 
+## Data Preparation
+We provide two scripts in the folder `tools` for prepare input data for model training. The scripts sample an image sequence from a video and then resize each image to have its shorter side to be `256` while keeping the aspect ratio of the image.
+You may need to set up `folder_root` accordingly to assure the extraction works correctly.
+ 
 ## training script
 
 ```
@@ -58,3 +74,4 @@ python3 train.py --datadir /path/to/folder --threed_data \
 --logdir snapshots/ --lr 0.01 --backbone_net i3d_resnet -b 64 -j 36 --use_lmdb
 ```
 
+## Testing
