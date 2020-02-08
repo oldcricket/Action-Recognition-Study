@@ -75,3 +75,9 @@ python3 train.py --datadir /path/to/folder --threed_data \
 ```
 
 ## Testing
+python3 test.py --datadir /path/to/folder --threed_data \
+--dataset st2stv1 --frames_per_group 1 --groups 8 \
+--pretrained /path/to/model.pth.tar \
+--logdir snapshots/ --backbone_net i3d_resnet -b 12 -j 36 \
+--num_clips 3 --num_crops 3 \ 
+--evaluate --num_clips 3 --num_crops 3 
